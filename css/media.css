@@ -39,12 +39,18 @@
 
     .container-busqueda {
         grid-area: busqueda;
-        width: 100%;
+        width: 90%;
         justify-content: center;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 580px) {
+        .container-busqueda {
+            width: 100%;
+        }
     }
 
     .container-busqueda input {
-        width: 100%;
+        width: 90%;
     }
 }
 
