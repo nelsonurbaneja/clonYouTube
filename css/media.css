@@ -27,15 +27,28 @@
 
     .container-icons {
         grid-area: iconos;
+        margin-right: 30px;
     }
 
     .container-icons button {
-       margin-left: 15px;
+       margin-left: 4px;
     }
     
     .container-icons img {
-        margin-left: 15px;
+        margin-left: 4px;
+        margin-right: 15px;
      }
+     @media screen and (min-width: 580px) {
+        .container-icons button {
+            margin-left: 15px;
+         }
+         .container-icons {
+            margin-right: 0px;
+        }
+         .container-icons img {
+             margin-left: 15px;
+          }
+    }
 
     .container-busqueda {
         grid-area: busqueda;
