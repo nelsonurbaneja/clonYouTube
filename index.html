@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Nelson Urbaneja">
+    <meta name="description" content="Clon de la página principal de YouTube">
+    <link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" type="image/x-icon">
+    <link rel="icon" href="https://s.ytimg.com/yts/img/favicon_32-vflOogEID.png" sizes="32x32">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <meta property="og:image" content="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico">
+    <title>YouTube</title>
+</head>
+<body>
+    
+    <div class="grid-container" id="gridContainer">
+        <!-- header -->
+        <header class="header">
+           <div class="container-logo">
+                <div class="toggle" id="toggle"></div>
+                <a href="https://nelsonurbaneja.github.io/clonYouTube/" class="title"><i class="icon-play"></i> <span>YouTube</span></a>
+           </div>
+
+           <div class="container-busqueda">
+               <input type="text" placeholder="Buscar" class="input-busqueda">
+               <button class="boton-icon" id="buscar" ><i class="icon-search"></i></button>
+           </div>
+
+           <div class="container-icons">
+               <button><i class="icon-video"></i></button>
+               <button><i class="icon-list"></i></button>
+               <button><i class="icon-bell"></i></button>
+               <a href="#" ><img src="./img/avatar.jpg" alt="Avatar" class="avatar"></a>
+           </div>
+        </header>
+
+        <!-- nav -->
+        <nav class="menu-lateral ">
+            <a href="#" class="active icon-late"><i class="icon-home"></i>Página Principal</a>
+            <a href="#" class="icon-late"><i class="icon-suitcase"></i>Tendencias</a>
+            <a href="#" class="icon-late"><i class="icon-calendar"></i>Suscripciones</a>
+
+            <hr/>
+
+            <a href="#" class="icon-late"><i class="icon-list"></i>Biblioteca</a>
+            <a href="#" class="icon-late"><i class="icon-suitcase"></i>Historial</a>
+            <a href="#" class="icon-late"><i class="icon-clock"></i>Ver más tarde</a>
+
+            <hr/>
+
+            <p class="subtitle" id="sub">SUSCRIPCIONES</p>
+
+            <a href="#" class="sub-avatar"><img src="./img/fm.jpg" alt="avatar" class="img-sub">Falcon Master</a>
+            <a href="#" class="sub-avatar"><img src="./img/edteam.jpg" alt="avatar" class="img-sub">EDteam</a>
+            <a href="#" class="sub-avatar"><img src="./img/vr.jpg" alt="avatar" class="img-sub">Victor Robles WEB</a>
+            <a href="#" class="sub-avatar"><img src="./img/jg.jpg" alt="avatar" class="img-sub">J&G Proyectos Web</a>
+            <a href="#" class="sub-avatar"><img src="./img/cf.jpg" alt="avatar" class="img-sub">codigofacilito</a>
+            <a href="#" class="sub-avatar"><img src="./img/mt.jpg" alt="avatar" class="img-sub">MARCIANOTECH</a>
+
+            <hr/>
+            <div id="info">
+                <p class="info">Información Prensa Derechos de autor Contacto Creadores Publicidad Desarrolladores </p>
+            <p class="info">Términos Privacidad Política y seguridad Probar las nuevas funciones</p>
+            </div>
+            
+
+            <p class="cite" id="cite">© 2020 Google, LLC</p>
+
+        </nav>
+
+        <!-- contenido videos -->
+        <main class="container-videos">
+            <p class="video-subtitle">Recomendados</p>
+            <div class="videos">
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video1.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar1.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Javascript 2019, Frontend, Backend, Mobile y más.</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">Fazt</p>
+                        <p class="visualizaciones">34.177 visualizaciones</p>
+                        <p class="dia">hace 10 meses</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video2.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar2.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Año nuevo, Vida nueva, Lenguajes, frameworks...</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">Victor Robles WEB</p>
+                        <p class="visualizaciones">104 visualizaciones</p>
+                        <p class="dia">hace 6 minutos</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video3.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar3.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">LETRA VS MARITHEA OCTAVOS / CRUCE D...</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">cruce de campeones</p>
+                        <p class="visualizaciones">14.137 visualizaciones</p>
+                        <p class="dia">hace 1 día</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video4.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar4.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Hice un Videojuego utilizando Solo program...</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">Adderly Céspedes</p>
+                        <p class="visualizaciones">2,3 M visualizaciones</p>
+                        <p class="dia">hace 3 meses</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video5.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar5.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">BROMA A MI NOVIA, ME ENCUENTRA CON...</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">JHEFERSON TV</p>
+                        <p class="visualizaciones">1,6 M visualizaciones</p>
+                        <p class="dia">hace 9 meses</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video6.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar6.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Como hacer un portafolio dinámico con HTML CSS...</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">FalconMasters</p>
+                        <p class="visualizaciones">16.015 visualizaciones</p>
+                        <p class="dia">hace 5 meses</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video7.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar7.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">CÓMO CREAR UN KEYLOGGER | DaKelvinWay</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">kjchints</p>
+                        <p class="visualizaciones">72.400 suscriptores</p>
+                        <p class="dia">hace 3 años</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video8.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar8.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">EL PRECIO DE LA HISTORIA – El elixir de la vida</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">History Latinoamérica</p>
+                        <p class="visualizaciones">686.718 visualizaciones</p>
+                        <p class="dia">hace 1 año</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video9.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar9.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Que lenguaje de programación debes aprender primero?</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">Adderly Céspedes</p>
+                        <p class="visualizaciones">228.439 visualizaciones</p>
+                        <p class="dia">hace 1 año</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video10.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar10.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Búsqueda de Datos en Tiempo Real (Live Search) con P...</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">LexterXPS</p>
+                        <p class="visualizaciones">112.738 visualizaciones</p>
+                        <p class="dia">hace 2 año</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video11.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar11.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Curso Adobe Xd (Diseño de app de música)</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">EDteam</p>
+                        <p class="visualizaciones">2307 visualizaciones</p>
+                        <p class="dia">hace 1 semana</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="img-video--container">
+                        <img src="./img/video12.png" alt="video" class="img-video">
+                    </div>
+                    <div class="title-container">
+                        <img src="./img/avatar12.jpg" alt="img-avatar" class="title-img">
+                        <p class="title-video">Un día en la vida de un programador de juegos japonés</p>
+                    </div>
+                    <div class="description-container">
+                        <p class="canal">Paolo fromTOKYO</p>
+                        <p class="visualizaciones">2,7 M visualizaciones</p>
+                        <p class="dia">hace 1 mes</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="l-container main-footer">
+        <p class="main-footer__text">Caracas Venezuela © 2020 Copyright - Desarrollador - <a href="https://www.linkedin.com/in/nelsonurbaneja/" target="_blank">Nelson Urbaneja</a></p>
+    </footer>
+
+
+
+
+    <script src="./js/js.js"></script>
+</body>
+</html>

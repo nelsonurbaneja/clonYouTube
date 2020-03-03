@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+/* ICONOS */
+
+.icon-play {
+    color: var(--colorRojo);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.icon-search {
+    width: 46px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(168, 167, 167);
+}
+
+.boton-icon {
+    border: solid 1px rgb(168, 167, 167);
+    border-left: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --colorHover: #D9D9D9;
+    --colorRojo: #FF0000;
+    --fondoMain: #F9F9F9;
+    --colorGris: rgba(45, 45, 45,.7);
+    --colorIcon: #606060;
+}
+
+.grid-container {
+    width: 100%;
+    min-height: 120vh;
+
+    display: grid;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 56px 1fr;
+    transition: all .3s;
+}
+
+
+/* Header */
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.title {
+  text-decoration: none;
+  letter-spacing:-1px;
+  font-weight: bold;
+  color: rgba(0,0,0,.8);
+  font-size: 1.15rem;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+.container-busqueda {
+    display: flex;
+    justify-content: start;
+}
+.container-icons  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-icons button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: var(--colorIcon);
+    cursor: pointer;
+    padding: 0;
+}
+
+.container-icons i {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-icons .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-busqueda button{
+    cursor: pointer;
+}
+
+.container-busqueda button:hover{
+    background: var(--colorHover);
+}
+.input-busqueda {
+    min-width: 75%;
+    height: 32px;
+    padding: 0 10px;
+    line-height: 32px;
+}
+
+.toggle {
+    width: 19px;
+    height: 12px;
+    cursor: pointer;
+    display: inline-block;
+    background: linear-gradient(var(--colorGris) 20%,
+                                white 20%, white 40%,
+                                var(--colorGris) 40%, var(--colorGris) 60%,
+                                white 60%, white 80%,
+                                var(--colorGris) 80%  );
+                                                     
+}
+
+/*  */
+
+/* menu lateral */
+.menu-lateral {
+    grid-area: menu;
+    margin-top: 20px;
+}
+
+.menu-lateral a{
+    text-decoration: none;
+    color: rgba(45, 45, 45,.9);
+    font-family: 'Roboto', 'Noto', sans-serif; 
+    font-weight: 700;
+    display: block;
+    line-height: 2;
+    font-size: .85rem;
+    min-width: 300px;
+
+}
+
+.icon-late {
+    padding-left: 20px;
+}
+.sub-avatar {
+    padding-left: 20px;
+}
+.menu-lateral a:hover{
+    background: var(--colorHover);
+}
+
+.menu-lateral i{
+    color: var(--colorIcon);
+    margin-right: 25px;
+    font-size: 1.1rem;
+    position: relative;
+    top: 3px;
+}
+
+.icon-home {
+    color: var(--colorRojo) !important;
+}
+
+.menu-lateral .subtitle{
+    color: rgba(45, 45, 45,.5);
+    font-size: .9rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.menu-lateral .img-sub {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.menu-lateral .sub-avatar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.menu-lateral .info {
+    color: var(--colorGris);
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: .8rem;
+    font-family: 'Roboto', 'Noto', sans-serif; 
+}
+
+.menu-lateral .cite {
+    color: var(--colorGris);
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: .8rem;
+}
+
+.active {
+    background: var(--colorHover);
+}
+
+/*  */
+
+
+
+
+
+/* Container Videos */
+
+.video-subtitle {
+    font-size: 1.1rem;
+    color: black;
+    margin: 20px 15px;
+    font-weight: 500;
+    font-family: 'Roboto', 'Noto', sans-serif; 
+}
+.container-videos {
+    background: var(--fondoMain);
+    grid-area: contenido;
+    padding: 0 20px;
+}
+
+.videos {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+    /* margin: 0 20px; */
+    cursor: pointer;
+}
+
+.video {
+    width: 100%;
+    margin-bottom: 30px;
+    /* border: 1px solid red; */
+}
+
+.img-video--container {
+  
+}
+
+.img-video {
+    min-width: 100%;
+    /* max-width: 100%; */
+    object-fit: cover;
+}
+.img-video:hover{
+    transform: scale(.99);
+    transition: transform .4s;
+}
+.title-container {
+    display: flex;
+}
+
+.title-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: block;
+    margin-right: 10px;
+}
+
+.title-video {
+    font-size: .85rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.9);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: 'Roboto', 'Noto', sans-serif; 
+}
+
+.description-container {
+
+}
+.description-container p{
+    margin: 0;
+    margin-left: 45px;
+    margin-top: 5px;
+    color: var(--colorIcon);
+    font-family: 'Roboto', 'Noto', sans-serif; 
+    font-size: .9rem;
+    line-height: .9;
+}
+.canal {
+
+}
+
+.visualizaciones {
+
+}
+
+.dia {
+
+}
+
+
+/*  */
+
+hr {
+    border-top:2px solid var(--fondoMain);
+}
+.main-footer {
+    text-align: center;
+}
+.main-footer__text {
+    font-weight: bold;
+    color: #606060;
+}
+.main-footer__text a{
+    text-decoration: none;
+    color: #FF0000;
+}
